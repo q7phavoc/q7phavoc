@@ -29,7 +29,7 @@
 
 ## static badge 만들기
 https://img.shields.io/badge/test-test-blue?style=flat-square&logo=javascript&label=javascript
-https://img.shields.io/github/downloads/q7phavoc/q7phavoc/total
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/q7phavoc/q7phavoc/total)
 
 참조 : https://shields.io/badges/static-badge
 
