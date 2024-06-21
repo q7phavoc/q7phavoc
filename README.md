@@ -12,6 +12,7 @@
 ![image](https://github.com/q7phavoc/q7phavoc/assets/82801390/ffd0b917-12b0-4d07-8a56-ed05f8211ae3)
 ![image](https://github.com/q7phavoc/q7phavoc/assets/82801390/3c05bdf8-2736-4362-8432-31869a2e4c27)
 
+# 타이틀 꾸미기
 
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
