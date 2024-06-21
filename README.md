@@ -15,6 +15,7 @@
 # 타이틀 꾸미기
 <div align="center">
   <h1>Welcome to q7phavoc's github</h1>
+  ![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=capsule%20render&fontSize=90)
 </div>
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
