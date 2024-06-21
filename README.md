@@ -21,7 +21,7 @@
 
 참조 : https://github.com/kyechan99/capsule-render?tab=readme-ov-file
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+;q7phavoc's+github)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=F78ADD&background=B9FAFF00&center=true&vCenter=true&random=false&width=435&lines=Welcome+to;q7phavoc's+github)](https://git.io/typing-svg)
 
 참조 : https://readme-typing-svg.demolab.com/demo/
 
