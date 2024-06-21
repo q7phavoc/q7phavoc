@@ -23,6 +23,8 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+;q7phavoc's+github)](https://git.io/typing-svg)
 
+참조 : https://readme-typing-svg.demolab.com/demo/
+
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
