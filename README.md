@@ -21,7 +21,7 @@
 
 참조 : https://github.com/kyechan99/capsule-render?tab=readme-ov-file
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=First+line+of+text;Second+line+of+text)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Welcome+to+;q7phavoc's+github)](https://git.io/typing-svg)
 
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
