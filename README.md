@@ -37,6 +37,12 @@
 
 참조 : https://simpleicons.org/
 
+## github readme stats 만들기
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=q7phavoc&show_icons=true&theme=radical)
+
+참조 : https://github.com/anuraghazra/github-readme-stats
+
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
