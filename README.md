@@ -13,8 +13,7 @@
 ![image](https://github.com/q7phavoc/q7phavoc/assets/82801390/3c05bdf8-2736-4362-8432-31869a2e4c27)
 
 # 타이틀 꾸미기
-![header](https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=Welcome%20to&fontSize=70)
-![header](https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=q7phavoc's%20github&fontSize=70)
+![header](https://capsule-render.vercel.app/api?type=soft&color=auto&height=300&section=header&text=Welcome%20to&desc=q7phavoc's%20github&fontSize=70)
 
 <div align="center">
   <h1>Welcome to q7phavoc's github</h1>
