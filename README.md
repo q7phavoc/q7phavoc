@@ -19,6 +19,8 @@
   <h1>Welcome to q7phavoc's github</h1>
 </div>
 
+참조 : https://github.com/kyechan99/capsule-render?tab=readme-ov-file
+
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
