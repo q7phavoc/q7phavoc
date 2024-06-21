@@ -33,7 +33,7 @@
 
 참조 : https://shields.io/badges/static-badge
 
-<img src="[https://your-image-url.type](https://github.com/q7phavoc/q7phavoc/assets/82801390/7c724399-8cf0-464f-bb41-625df168941e)" width="100" height="100">
+<img src="https://github.com/q7phavoc/q7phavoc/assets/82801390/7c724399-8cf0-464f-bb41-625df168941e" width="100" height="100">
 
 참조 : https://simpleicons.org/
 
