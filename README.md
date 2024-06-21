@@ -1,5 +1,7 @@
 ## Hi there 👋
 
+GitHub Repo stars GitHub forks GitHub watchers GitHub contributors GitHub last commit GitHub GitHub closed issues GitHub closed pull requests
+
 <!--
 **q7phavoc/q7phavoc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
