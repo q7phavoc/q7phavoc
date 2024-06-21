@@ -28,7 +28,7 @@
 # 내용 꾸미기
 
 ## static badge 만들기
-https://img.shields.io/badge/test-test-blue?style=flat-square&logo=javascript&label=javascript
+![Static Badge](https://img.shields.io/badge/test-test-blue?style=flat-square&logo=javascript&label=javascript)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/q7phavoc/q7phavoc/total)
 
 참조 : https://shields.io/badges/static-badge
