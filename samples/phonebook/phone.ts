@@ -63,16 +63,17 @@ class AddressBook {
   contacts: Contact[] = [];
 
   constructor() {
-    this.fetchData();
+    // this.fetchData();
   }
 
-  fetchData(): void {
-    fetchContacts().then((response) => {
+  async fetchData(): Promise<void> {
+    await fetchContacts().then((response) => {
       this.contacts = response;
     });
   }
 
   findContactByName(name: string): Contact[] {
+    // console.log(this.contacts);
     return this.contacts.filter((contact) => contact.name === name);
   }
 
@@ -99,4 +100,11 @@ class AddressBook {
   }
 }
 
-new AddressBook();
+async function test2() {
+  let addressBook: AddressBook = new AddressBook();
+  await addressBook.fetchData();
+  let byName: Contact[] = addressBook.findContactByName("마동석");
+  console.log(byName);
+}
+
+test2();
