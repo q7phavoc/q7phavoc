@@ -26,10 +26,10 @@
 //   }
 // }
 
-import { Component } from "react";
-import ClassComponent from "./ClassComponent";
-import ArrowComponent from "./ArrowComponent";
-import P from "./P";
+// import { Component } from "react";
+// import ClassComponent from "./ClassComponent";
+// import ArrowComponent from "./ArrowComponent";
+// import P from "./P";
 
 // export default function App() {
 //   return <div>Hello function-keyword component!</div>;
@@ -44,18 +44,49 @@ import P from "./P";
 //   );
 // };
 
-const App = () => {
-  // refactoring map 함수 사용
-  // [...].map((item, index)=> <tag>)
-  // const texts = [<p key="1">hello</p>, <p key="2">world</p>];
-  // const texts = ["hello", "world"].map((item, index) => (<p key={index} >{item}</p>));
-  // const texts = ["hello", "world"].map((item, index) => (
-  //   <p key={index} children={item} />
-  // ));
-  const texts = ["hello", "world"].map((item, index) => (
-    <P key={index} children={item} />
-  ));
-  return <div children={texts} />;
-};
+// const App = () => {
+//   // refactoring map 함수 사용
+//   // [...].map((item, index)=> <tag>)
+//   // const texts = [<p key="1">hello</p>, <p key="2">world</p>];
+//   // const texts = ["hello", "world"].map((item, index) => (<p key={index} >{item}</p>));
+//   // const texts = ["hello", "world"].map((item, index) => (
+//   //   <p key={index} children={item} />
+//   // ));
+//   const texts = ["hello", "world"].map((item, index) => (
+//     <P key={index} children={item} />
+//   ));
+//   return <div children={texts} />;
+// };
 
-export default App;
+// export default App;
+
+// event 처리 부분
+import EventLisner from "./pages/EventListner";
+import OnClick from "./pages/OnClick";
+import ReactOnClick from "./pages/ReactOnClick";
+import DispatchEvent from "./pages/DispatchEvent";
+import EventBubbling from "./pages/EventBubbling";
+import StopPropagation from "./pages/StopPropagation";
+import VariousInputs from "./pages/VariousInputs";
+import OnChange from "./pages/OnChange";
+import FileInput from "./pages/FileInput";
+import DragDrop from "./pages/DragDrop";
+import FileDrop from "./pages/FileDrop";
+
+export default function App() {
+  return (
+    <div>
+      <FileDrop />
+      <DragDrop />
+      <FileInput />
+      <OnChange />
+      <VariousInputs />
+      <StopPropagation />
+      <EventBubbling />
+      <DispatchEvent />
+      <ReactOnClick />
+      <OnClick />
+      <EventLisner />
+    </div>
+  );
+}
