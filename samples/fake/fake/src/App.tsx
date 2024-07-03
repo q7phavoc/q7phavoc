@@ -12,24 +12,50 @@
 //   );
 // }
 
+// import { Component } from "react";
+// import ClassComponent from "./ClassComponent";
+
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <ul>
+//         <ClassComponent href="http://www.google.com" text="go to google" />
+//         <ClassComponent href="http://www.x.com" text="go to x(twitter)" />
+//       </ul>
+//     );
+//   }
+// }
+
 import { Component } from "react";
+import ClassComponent from "./ClassComponent";
+import ArrowComponent from "./ArrowComponent";
+import P from "./P";
 
-export default class App extends Component {
-  render() {
-    const isLoading = true;
-    // if (isLoading) return <p>loading...</p>;
-    const children = isLoading ? (
-      <p>loading...</p>
-    ) : (
-      <ul>
-        <li>
-          <a href="http://www.google.com">
-            <p>go to google</p>
-          </a>
-        </li>
-      </ul>
-    );
+// export default function App() {
+//   return <div>Hello function-keyword component!</div>;
+// }
 
-    return <div>{children}</div>;
-  }
-}
+// const App = () => {
+//   return (
+//     <ul>
+//       <ClassComponent href="http://www.google.com" text="go to google" />
+//       <ArrowComponent href="http://www.X.com" text="go to X(twitter)" />
+//     </ul>
+//   );
+// };
+
+const App = () => {
+  // refactoring map 함수 사용
+  // [...].map((item, index)=> <tag>)
+  // const texts = [<p key="1">hello</p>, <p key="2">world</p>];
+  // const texts = ["hello", "world"].map((item, index) => (<p key={index} >{item}</p>));
+  // const texts = ["hello", "world"].map((item, index) => (
+  //   <p key={index} children={item} />
+  // ));
+  const texts = ["hello", "world"].map((item, index) => (
+    <P key={index} children={item} />
+  ));
+  return <div children={texts} />;
+};
+
+export default App;
