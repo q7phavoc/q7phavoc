@@ -13,6 +13,7 @@
 ![image](https://github.com/q7phavoc/q7phavoc/assets/82801390/3c05bdf8-2736-4362-8432-31869a2e4c27)
 
 # 타이틀 꾸미기
+
 ![header](https://capsule-render.vercel.app/api?type=slice&color=auto&height=300&section=header&text=Welcome%20to&desc=q7phavoc's%20github&fontSize=70&animation=fadeIn&descSize=30&descAlignY=80)
 
 <div align="center">
@@ -28,6 +29,7 @@
 # 내용 꾸미기
 
 ## static badge 만들기
+
 ![Static Badge](https://img.shields.io/badge/test-test-blue?style=flat-square&logo=javascript&label=javascript)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/q7phavoc/q7phavoc/total)
 
