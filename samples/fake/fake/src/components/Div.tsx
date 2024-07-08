@@ -18,7 +18,7 @@ export type DivProps = ReactDivProps &
 
 // prettier-ignore
 export const Div: FC<DivProps> = ({
-  width, height, style: _style, src, className: _className, ...props
+  width, height, style: _style, src, ...props
 }) => {
   const style = {..._style, width, height, backgroundImage: src && `url(${src})`}
   return <div {...props} style={style}></div>
