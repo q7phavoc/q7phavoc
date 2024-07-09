@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import UseStateApp1 from './UseStateApp1';
+import UseEffectApp2 from './UseEffectApp2';
 import reportWebVitals from './reportWebVitals';
+import UseContextApp1 from './UseContext1';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UseStateApp1 />
+    <UseContextApp1 />
   </React.StrictMode>
 );
 

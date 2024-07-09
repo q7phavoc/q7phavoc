@@ -165,6 +165,9 @@ import JustifyCenterTest from './pages/JustifyCenterTest'
 import AlignTest from './pages/AlignTest'
 import UserContainer from './pages/UserContainer'
 import CardContainer from './pages/CardContainer'
+import ButtonTest from './pages/ButtonTest'
+import InputTest from './pages/InputTest'
+import ModalTest from './pages/ModalTest'
 
 export default function App() {
   return (
@@ -176,6 +179,9 @@ export default function App() {
       <MinMaxTest />
       <WrapTest />
       <DirectionTest />
+      {/* <ButtonTest /> */}
+      {/* <InputTest /> */}
+      {/* <ModalTest /> */}
     </main>
   )
 }
