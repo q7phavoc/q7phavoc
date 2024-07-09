@@ -158,13 +158,13 @@
 //   );
 // }
 
-import DirectionTest from './pages/DirectionTest'
-import WrapTest from './pages/WrapTest'
-import MinMaxTest from './pages/MinMaxTest'
-import JustifyCenterTest from './pages/JustifyCenterTest'
-import AlignTest from './pages/AlignTest'
-import UserContainer from './pages/UserContainer'
-import CardContainer from './pages/CardContainer'
+import DirectionTest from "./pages/DirectionTest";
+import WrapTest from "./pages/WrapTest";
+import MinMaxTest from "./pages/MinMaxTest";
+import JustifyCenterTest from "./pages/JustifyCenterTest";
+import AlignTest from "./pages/AlignTest";
+import UserContainer from "./pages/UserContainer";
+import CardContainer from "./pages/CardContainer";
 
 export default function App() {
   return (
@@ -175,7 +175,7 @@ export default function App() {
       <JustifyCenterTest />
       <MinMaxTest />
       <WrapTest />
-      <DirectionTest />
+      {/* <DirectionTest /> */}
     </main>
-  )
+  );
 }
