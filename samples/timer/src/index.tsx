@@ -1,16 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import UseEffectApp2 from './UseEffectApp2';
-import reportWebVitals from './reportWebVitals';
-import UseContextApp1 from './UseContext1';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import UseEffectApp2 from "./UseEffectApp2";
+import reportWebVitals from "./reportWebVitals";
+import UseContextApp1 from "./UseContext1";
+import UseRefApp4 from "./UseRefApp4";
+import UseCallbackApp2 from "./UseCallbackApp2";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <UseContextApp1 />
+    <UseCallbackApp2 />
   </React.StrictMode>
 );
 
