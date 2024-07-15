@@ -4,4 +4,6 @@ literal = "sue";
 literal = "tom";
 // literal = "john";
 
+let literal2: Literal = "jeff";
+
 console.log(typeof literal);

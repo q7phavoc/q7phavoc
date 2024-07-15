@@ -180,20 +180,20 @@
 //   );
 // }
 
-import { useEffect, useRef, useState } from "react";
-import Clock from "./pages/Clock";
+// import { useEffect, useRef, useState } from "react";
+// import Clock from "./pages/Clock";
 
-export default function App() {
-  const [today, setToday] = useState(new Date());
-  useEffect(() => {
-    const duration = 1000;
-    const id = setInterval(() => {
-      // 시간을 세팅하는 코드를 구현하여 브라우저에서 현재 시각을 업데이트하시오.
-    }, duration);
-    return () => clearInterval(id);
-  }, []);
-  return <Clock today={today} />;
-}
+// export default function App() {
+//   const [today, setToday] = useState(new Date());
+//   useEffect(() => {
+//     const duration = 1000;
+//     const id = setInterval(() => {
+//       // 시간을 세팅하는 코드를 구현하여 브라우저에서 현재 시각을 업데이트하시오.
+//     }, duration);
+//     return () => clearInterval(id);
+//   }, []);
+//   return <Clock today={today} />;
+// }
 
 // import Clock from "./pages/Clock";
 // import { useClock } from "./hooks";
@@ -289,3 +289,21 @@ export default function App() {
 //     </ResponsiveProvider>
 //   );
 // }
+
+import { Provider as ReduxProvider } from "react-redux";
+import { useStore } from "./store";
+
+import ReduxClock from "./pages/ReduxClock";
+import UseReducerClock from "./pages/UseReducerClock";
+
+export default function App() {
+  const store = useStore();
+  return (
+    <ReduxProvider store={store}>
+      <main className="p-8">
+        <UseReducerClock />
+        <ReduxClock />
+      </main>
+    </ReduxProvider>
+  );
+}
