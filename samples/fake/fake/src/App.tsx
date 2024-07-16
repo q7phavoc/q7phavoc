@@ -290,20 +290,37 @@
 //   );
 // }
 
-import { Provider as ReduxProvider } from "react-redux";
-import { useStore } from "./store";
+// import { Provider as ReduxProvider } from "react-redux";
+// import { useStore } from "./store";
 
-import ReduxClock from "./pages/ReduxClock";
-import UseReducerClock from "./pages/UseReducerClock";
+// import ReduxClock from "./pages/ReduxClock";
+// import UseReducerClock from "./pages/UseReducerClock";
+
+// export default function App() {
+//   const store = useStore();
+//   return (
+//     <ReduxProvider store={store}>
+//       <main className="p-8">
+//         <UseReducerClock />
+//         <ReduxClock />
+//       </main>
+//     </ReduxProvider>
+//   );
+// }
+
+import { Provider as ReduxProvider } from "react-redux";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { useStore } from "./store";
+import Board from "./pages/Board";
 
 export default function App() {
   const store = useStore();
   return (
     <ReduxProvider store={store}>
-      <main className="p-8">
-        <UseReducerClock />
-        <ReduxClock />
-      </main>
+      <DndProvider backend={HTML5Backend}>
+        <Board />
+      </DndProvider>
     </ReduxProvider>
   );
 }

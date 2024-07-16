@@ -1,19 +1,12 @@
-import { AppState } from "./AppState";
-import { Actions } from "./actions";
+import {combineReducers} from 'redux'
+import * as L from './listEntities'
+import * as LO from './listidOrders'
+import * as LC from './listidCardidOrders'
+import * as C from './cardEntities'
 
-const initialAppState = {
-  today: new Date().toLocaleTimeString(),
-};
-
-export const rootReducer = (
-  state: AppState = initialAppState,
-  action: Actions
-) => {
-  switch (action.type) {
-    case "setToday": {
-      return { ...state, today: action.today };
-    }
-  }
-
-  return state;
-};
+export const rootReducer = combineReducers({
+  listEntities: L.reducer,
+  listidOrders: LO.reducer,
+  listidCardidOrders: LC.reducer,
+  cardEntities: C.reducer
+})
