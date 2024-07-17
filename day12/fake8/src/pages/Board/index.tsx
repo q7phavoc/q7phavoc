@@ -25,16 +25,18 @@ export default function Board() {
   )
 
   return (
-    <section className="mt-4">
-      <Title>Board</Title>
-      <DragDropContext onDragEnd={onDragEnd}>
-        <ListDroppable className="flex flex-row p-2 mt-4">
-          <div className="flex flex-wrap p-2 mt-4">
-            {children}
-            <CreateListForm onCreateList={onCreateList} />
-          </div>
-        </ListDroppable>
-      </DragDropContext>
-    </section>
+    <>
+      <section className="mt-4">
+        <Title>Board</Title>
+        <DragDropContext onDragEnd={onDragEnd}>
+          <ListDroppable className="flex flex-row p-2 mt-4">
+            <div className="flex flex-wrap p-2 mt-4">
+              {children}
+              <CreateListForm onCreateList={onCreateList} />
+            </div>
+          </ListDroppable>
+        </DragDropContext>
+      </section>
+    </>
   )
 }
