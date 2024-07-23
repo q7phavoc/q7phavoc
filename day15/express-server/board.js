@@ -11,6 +11,7 @@ app.get("/", (req, res) => {
 
 app.post("/posts", (req, res) => {
   const { title, name, text } = req.body;
+  console.log(req.body);
 
   posts.push({ id: posts.length + 1, title, name, text, createdDt: Date() });
   res.json({ title, name, text });
