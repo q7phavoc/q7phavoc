@@ -49,30 +49,39 @@
       {% endif %}
     </div>
     {% endfor %}
-    <!-- prettier-ignore -->
     <span>currentPage:{{currentPage}}</span>
-    <br />
+    <br/>
     <span>pagePaddingSize:{{pagePaddingSize}}</span>
-    <br />
+    <br/>
     <span>totalSize:{{totalSize}}</span>
-    <br />
+    <br/>
     <span>>>:{{totalSize // pageSize + pagePaddingSize}}</span>
-    <br />
+    <br/>
     <span>>>:{{(currentPage + pagePaddingSize)}}</span>
-    <br />
+    <br/>
+    <span>>>:{{(currentPage + pagePaddingSize + 1)}}</span>
+    <br/>
     <a href="/?currentPage=1"><span><<</span></a>
     &nbsp;&nbsp; {% if currentPage != 1 %}
     <a href="/?currentPage={{currentPage - 1}}"><span><</span></a
     >&nbsp;&nbsp; {% endif %} {% if currentPage == 1 %}
-    <span><</span>&nbsp;&nbsp; {% endif %} {% for i in range(totalSize //
-    pageSize) %} {% if i > 0 and i < (totalSize // pageSize) and i >
-    (currentPage - pagePaddingSize - 1) and i < (currentPage + pagePaddingSize +
-    1) %} <a href="/?currentPage={{i}}"><span>{{i}}</span></a
-    >&nbsp;&nbsp; {% endif %} {% endfor %} {% if currentPage != totalSize //
-    pageSize %} <a href="/?currentPage={{currentPage + 1}}"><span>></span></a
-    >&nbsp;&nbsp;{% endif %} {% if currentPage == totalSize // pageSize %}
-    <a href="/?currentPage={{currentPage + 1}}"><span>></span></a
-    >&nbsp;&nbsp;{% endif %}
+    <span><</span>&nbsp;&nbsp; {% endif %}
+    {% for i in range(totalSize // pageSize + pagePaddingSize) %}
+    {% if i > 0 and i < (totalSize // pageSize + pagePaddingSize)
+    and i > (currentPage - pagePaddingSize - 1) and i < (currentPage +
+    pagePaddingSize + 1) %}
+    {% if currentPage == i %}
+    <a href="/?currentPage={{i}}"><span style="font-weight: bold;">{{i}}</span></a>&nbsp;&nbsp;
+    {% endif %}
+    {% if currentPage != i %}
+    <a href="/?currentPage={{i}}"><span>{{i}}</span></a>&nbsp;&nbsp;
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    
+    {% if currentPage != (totalSize // pageSize + 1) %} <a href="/?currentPage={{currentPage + 1}}"><span>></span></a
+    >&nbsp;&nbsp;{% endif %} {% if currentPage == (totalSize // pageSize + 1) %}
+    <span>></span>&nbsp;&nbsp;{% endif %}
     <a href="/?currentPage={{totalSize // pageSize + 1}}"><span>>></span></a>
   </div>
 </div>
